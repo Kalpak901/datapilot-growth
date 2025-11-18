@@ -1,0 +1,280 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Data Pilot | Growth Plan ($349/mo) - Agency & Mid-Size Stores</title>
+    <meta name="description" content="DataPilot Growth — for marketing agencies and mid-size stores. Funnel metrics, product performance, weekly + monthly reports." />
+    <!-- Tailwind CDN --><script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* Light Theme Variables */
+        :root{
+            --accent1: #06b6d4; /* Cyan-500 */
+            --accent2: #08b0a8; /* Slightly greener Cyan */
+            --bg-1: #f4f7f9; /* Off-white / Light Blue Gray */
+            --bg-2: #ffffff; /* White background */
+            --text-primary: #1f2937; /* Dark Gray for main text */
+            --text-muted: #6b7280; /* Medium Gray for secondary text */
+        }
+        html, body { height: 100%; }
+        body {
+            margin: 0;
+            background: linear-gradient(180deg, var(--bg-1) 0%, var(--bg-2) 100%);
+            color: var(--text-primary);
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            line-height: 1.6;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* Clean, subtle shadow for professionalism */
+        .glass {
+            background: rgba(255, 255, 255, 0.9);
+            border: 1px solid #e5e7eb;
+            backdrop-filter: blur(8px);
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
+        }
+        .btn-cta {
+            background: linear-gradient(90deg, var(--accent1), var(--accent2));
+            color: #1f2937; 
+            font-weight: 800;
+            padding: 14px 24px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(6, 182, 212, 0.4);
+            transition: all .3s ease;
+            text-decoration: none;
+        }
+        .btn-cta:hover {
+            box-shadow: 0 6px 20px rgba(6, 182, 212, 0.6);
+            transform: translateY(-2px);
+        }
+        .card {
+            background: #ffffff; 
+            border-radius: 16px;
+            padding: 28px;
+            border: 1px solid #e5e7eb;
+            transition: all .3s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        }
+        .card:hover {
+            border-color: rgba(6, 182, 212, 0.3);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        .kpi-item {
+            background: #f3f4f6; 
+            padding: 12px 16px;
+            border-radius: 10px;
+            color: var(--text-primary);
+            font-weight: 600;
+            border-left: 3px solid var(--accent1);
+        }
+        .text-muted {
+            color: var(--text-muted);
+        }
+        
+        /* Specific styles for the embedded SVG logo */
+        .header-logo-svg {
+            width: 44px;
+            height: 44px;
+            display: block;
+        }
+        .header-logo-svg .plane-fill {
+            fill: #1f2937; 
+        }
+        .header-logo-svg .globe-outline {
+            stroke: #1f2937; 
+            stroke-width: 0.5;
+        }
+        .header-logo-svg .globe-base {
+            fill: #3498db;
+            opacity: 0.8; 
+        }
+    </style>
+</head>
+<body>
+
+<div class="max-w-4xl mx-auto px-6 py-8">
+    
+    <!-- Header -->
+    <header class="flex items-center justify-between pb-8 border-b border-gray-200">
+        <div class="flex items-center gap-4">
+            <!-- EMBEDDED SVG LOGO -->
+            <svg class="header-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#08b0a8;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                <circle cx="50" cy="50" r="40" fill="url(#logoGradient)"/>
+                <path class="globe-outline" d="M50,10 A40,40 0 0,1 50,90 M50,10 A40,40 0 0,0 50,90 M10,50 L90,50 M30,15 Q35,50 30,85 M70,15 Q65,50 70,85" stroke="#1f2937" stroke-width="1" fill="none"/>
+                <path d="M 60 40 L 75 35 L 85 45 L 60 55 Z M 40 45 L 50 35 L 60 40 L 40 55 Z" fill="#1f2937"/> 
+            </svg>
+
+            <div>
+                <div class="text-2xl font-bold">Data Pilot</div>
+                <div class="text-sm font-medium" style="color:var(--accent1)">**Growth Plan** - Agency & Mid-Size Store Focus</div>
+            </div>
+        </div>
+        <nav>
+            <a class="btn-cta text-sm" href="#buy" id="subscribe-header" style="text-decoration:none">
+                Subscribe — $349/mo
+            </a>
+        </nav>
+    </header>
+
+    <main class="mt-12">
+        
+        <!-- Hero / Pricing Summary -->
+        <section class="glass p-8 md:p-10 mb-12 border-2 border-cyan-500/50 shadow-lg">
+            <div class="grid md:grid-cols-3 gap-8 items-center">
+                <!-- Left: Plan Details -->
+                <div class="md:col-span-2">
+                    <h1 class="text-3xl md:text-4xl font-extrabold leading-tight">Growth Pilot: Precision Analytics for Scaling</h1>
+                    <p class="text-lg mt-3 text-muted max-w-xl">The complete solution for marketing agencies and mid-sized e-commerce operations. Unlock advanced funnel analysis, product profitability metrics, and dedicated support.</p>
+
+                    <ul class="mt-6 space-y-3 text-sm list-none p-0">
+                        <li class="flex items-center gap-2 font-semibold"><span class="text-cyan-600 font-bold text-xl">✓</span> Monthly Deep-Dive Report & Playbook</li>
+                        <li class="flex items-center gap-2 font-semibold"><span class="text-cyan-600 font-bold text-xl">✓</span> Funnel, LTV, and CAC Performance Metrics</li>
+                        <li class="flex items-center gap-2 font-semibold"><span class="text-cyan-600 font-bold text-xl">✓</span> Dedicated Account & Priority Email Support</li>
+                    </ul>
+                </div>
+                
+                <!-- Right: CTA Card -->
+                <div class="md:col-span-1 card border-2 border-cyan-500/30 p-6 self-start shadow-xl" id="buy">
+                    <div class="text-base font-semibold text-cyan-600 tracking-wider uppercase">Your Investment</div>
+                    <div class="text-5xl font-extrabold mt-2">$349 <span class="text-xl font-normal text-muted">/mo</span></div>
+                    <div class="text-sm text-muted mt-1">Ideal for managing multiple data sources.</div>
+
+                    <div class="mt-6">
+                        <!-- Replace the data-payment-link value with the Stripe Payment Link for Growth -->
+                        <button id="subscribe-growth" data-payment-link="PASTE_STRIPE_LINK_FOR_GROWTH" class="btn-cta w-full text-lg transition duration-300">
+                            Secure Checkout
+                        </button>
+                    </div>
+                    <div class="text-center text-xs text-muted mt-4">No long-term commitment.</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Image and Video Placeholders -->
+        <section class="mb-12 grid md:grid-cols-2 gap-8">
+            <!-- Dashboard Image Placeholder -->
+            <div class="card p-6 border-l-4 border-l-cyan-500">
+                <h3 class="text-xl font-semibold mb-3">Funnel Visualization & LTV Metrics</h3>
+                <p class="text-muted text-sm mb-4">A visual of the Growth dashboard showing funnel drop-offs, LTV progression, and CAC analysis.</p>
+                <div class="w-full h-48 bg-gray-100 border border-dashed border-gray-300 rounded-lg flex items-center justify-center text-muted">
+                    Advanced Metrics Dashboard **(Image Placeholder)**
+                </div>
+            </div>
+
+            <!-- Video Placeholder -->
+            <div class="card p-6 border-l-4 border-l-cyan-500">
+                <h3 class="text-xl font-semibold mb-3">Monthly Report Video Walkthrough</h3>
+                <p class="text-muted text-sm mb-4">A video demonstrating how to use the Growth Plan's monthly report playbook and interpret key metrics.</p>
+                <div class="w-full h-48 bg-gray-100 border border-dashed border-gray-300 rounded-lg flex items-center justify-center text-muted">
+                    30-Minute Report Deep Dive **(Video/iFrame Placeholder)**
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Feature Breakdown -->
+        <section class="mb-12">
+            <h2 class="text-3xl font-bold mb-6">Advanced Modules: Growth Access</h2>
+            
+            <!-- Core Analytics Card -->
+            <div class="card mb-8">
+                <h3 class="text-xl font-semibold border-b border-gray-200 pb-2">Funnel & Product Profitability Metrics</h3>
+                <p class="text-muted mt-3">Move beyond basic sales data. Get clear visibility into customer acquisition, activation, and retention loops, plus SKU-level margin analysis.</p>
+                <div class="flex flex-wrap gap-4 mt-4">
+                    <div class="kpi-item">Top, Mid, Bottom Funnel Breakdown</div>
+                    <div class="kpi-item">Customer LTV/CAC Estimates</div>
+                    <div class="kpi-item">Product Profitability Index</div>
+                    <div class="kpi-item">Basic Lead Scoring (Segmentation)</div>
+                </div>
+            </div>
+            
+            <!-- Reporting Card -->
+            <div class="card mb-8">
+                <h3 class="text-xl font-semibold border-b border-gray-200 pb-2">Comprehensive Weekly & Monthly Reporting</h3>
+                <p class="text-muted mt-3">Receive the weekly priority action plan *plus* a dedicated monthly deep-dive report designed for executive or client review.</p>
+                <ul class="text-muted mt-4 space-y-1 list-disc list-inside">
+                    <li>Weekly: 3 prioritized actions for immediate tactical execution.</li>
+                    <li>Monthly: Comprehensive 30-day playbook with detailed findings and forecasts.</li>
+                    <li>Access to raw data views for custom deep-dives.</li>
+                </ul>
+            </div>
+
+            <!-- Agency Support & Customization -->
+            <div class="card mb-8">
+                <h3 class="text-xl font-semibold border-b border-gray-200 pb-2">Agency & Dedicated Customization</h3>
+                <p class="text-muted mt-3">Features optimized for agency reporting and internal team alignment.</p>
+                <ul class="text-muted mt-4 space-y-1 list-disc list-inside">
+                    <li>**Custom KPI Mapping:** Align our platform's metrics with your internal or client-specific terminology.</li>
+                    <li>**Monthly Video Walkthrough:** A 30-minute personalized video summary of the month's performance and plan.</li>
+                    <li>**Priority Email Support:** Faster response times for critical data or reporting questions.</li>
+                </ul>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="text-sm pt-8 border-t border-gray-200">
+        <div class="text-center">
+            <div class="text-muted">Contact Sales: <a href="mailto:chris@datapilot.in.inet" class="text-cyan-600 hover:text-cyan-700 transition">chris@datapilot.in.inet</a></div>
+            <div class="mt-2 text-muted text-xs">© 2024 Data Pilot, LLC • <a href="/privacy.html" class="hover:text-cyan-600">Privacy Policy</a> • <a href="/terms.html" class="hover:text-cyan-600">Terms of Service</a></div>
+        </div>
+    </footer>
+</div>
+
+<script>
+    // Use custom alerts instead of default alert() since it's restricted in the environment
+    const customAlert = (message) => {
+        const container = document.createElement('div');
+        container.className = 'fixed inset-0 z-[9999] flex items-center justify-center p-4 bg-black/60';
+        container.innerHTML = `
+            <div class="bg-white p-6 rounded-lg shadow-xl max-w-sm w-full text-gray-900">
+                <h3 class="font-bold text-lg mb-2">Notice</h3>
+                <p>${message}</p>
+                <button class="mt-4 px-4 py-2 bg-cyan-600 text-white rounded-lg hover:bg-cyan-700" onclick="this.closest('.fixed').remove()">
+                    Close
+                </button>
+            </div>
+        `;
+        document.body.appendChild(container);
+    };
+
+    // Replace default alert() usage in the script (which was inside the original file)
+    window.alert = customAlert; 
+
+    // open stripe payment link
+    const subscribeHandler = (event) => {
+        const button = event.currentTarget;
+        const link = button.getAttribute('data-payment-link');
+        
+        if(!link || link.includes('PASTE')) { 
+            customAlert('Configuration Error: Please replace the data-payment-link attribute with your Stripe Payment Link for the Growth Plan.'); 
+            return; 
+        }
+        
+        // In a real browser environment, this would open a new tab/window
+        console.log('Redirecting to Stripe payment link:', link);
+        // Since we cannot open external links, we simulate the action with the custom alert
+        customAlert('Redirecting to the secure Stripe Checkout page... (Link copied to console in this preview environment)');
+    };
+
+    document.getElementById('subscribe-growth').addEventListener('click', subscribeHandler);
+    document.getElementById('subscribe-header').addEventListener('click', (e) => {
+        e.preventDefault();
+        // Smooth scroll to the CTA section
+        document.getElementById('buy').scrollIntoView({ behavior: 'smooth' });
+    });
+</script>
+</body>
+</html>
