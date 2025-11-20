@@ -1,142 +1,210 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DataPilot | Intelligent Sales Analytics</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DataPilot • Growth Plan — Automated Analytics & Weekly Insights</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Main styles (upload styles.css to repo) -->
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="theme-color" content="#4A74FF" />
 </head>
 <body>
 
-    <nav class="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo-link">
-                <img src="/assets/logo.png" alt="DataPilot Logo" class="nav-logo">
-            </a>
-            <div class="nav-links">
-                <a href="#features">Features</a>
-                <a href="#pricing">Pricing</a>
-                <a href="#login" class="btn btn-secondary">Log in</a>
-                <a href="#get-started" class="btn btn-primary">Get Started</a>
-            </div>
-        </div>
-    </nav>
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a class="logo-link" href="/">
+        <img src="logo.png" alt="DataPilot logo" class="nav-logo">
+      </a>
 
-    <header class="hero-section">
-        <div class="container hero-grid">
-            <div class="hero-text">
-                <span class="badge">New: Growth Module v2.0 🚀</span>
-                <h1>Stop guessing.<br>Start growing.</h1>
-                <p class="hero-subtext">
-                    DataPilot unifies your sales channels into one crystal-clear dashboard. Track LTV, analyze funnels, and automate your reporting in seconds.
-                </p>
-                <div class="hero-buttons">
-                    <a href="#pricing" class="btn btn-primary btn-lg">Start Free Trial</a>
-                    <a href="#demo" class="btn btn-text">View Live Demo &rarr;</a>
-                </div>
-                <div class="trust-proof">
-                    <p>Trusted by 500+ data-driven agencies</p>
-                </div>
-            </div>
-            <div class="hero-image-wrapper">
-                <img src="Dash.png" alt="DataPilot Dashboard Interface" class="hero-img floating">
-                <div class="hero-glow"></div>
-            </div>
-        </div>
-    </header>
+      <div class="nav-links">
+        <a href="/#features">Features</a>
+        <a href="/#pricing" class="active">Plans</a>
+        <a href="/#contact">Contact</a>
+        <a href="mailto:chris@datapilot.in.inet" class="btn btn-secondary">Contact</a>
+        <a href="#subscribe" class="btn btn-primary">Subscribe</a>
+      </div>
+    </div>
+  </nav>
 
-    <section id="features" class="features-section">
-        <div class="container">
-            <div class="section-header text-center">
-                <h2>Everything you need to scale</h2>
-                <p>Replace your spreadsheet chaos with automated precision.</p>
-            </div>
-            
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">📊</div>
-                    <h3>Funnel Visualization</h3>
-                    <p>See exactly where customers drop off. Optimize your checkout flow with granular data points.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">💰</div>
-                    <h3>Profitability Index</h3>
-                    <p>Track SKU-level margins. Know which products are driving real profit, not just revenue.</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
-                    <h3>Real-time Sync</h3>
-                    <p>Connects instantly with Shopify, Amazon, and Stripe. Your data is always up to the minute.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- HERO -->
+  <header class="hero-section">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <span class="badge">Best value</span>
+        <h1>Growth plan — automated analytics, weekly insights</h1>
+        <p class="hero-subtext">
+          Turn raw sales into actionable growth plans. Live dashboards, weekly AI-led briefing emails, and a monthly
+          PDF you can share with your team.
+        </p>
 
-    <section class="preview-section">
-        <div class="container preview-grid">
-            <div class="preview-image">
-                <img src="Insight.png" alt="Weekly Insights Report" class="insight-img">
-            </div>
-            <div class="preview-text">
-                <h2>Weekly Insights, <br>Delivered.</h2>
-                <p>Don't have time to dig through data every day? Our automated AI analyst sends you a weekly briefing.</p>
-                <ul class="check-list">
-                    <li>✅ <strong>Trend Detection:</strong> Spot spikes before they trend.</li>
-                    <li>✅ <strong>Churn Alerts:</strong> Know when retention drops.</li>
-                    <li>✅ <strong>Actionable Plans:</strong> Get 3 key actions every Monday.</li>
-                </ul>
-            </div>
+        <div class="hero-buttons">
+          <a href="#pricing" class="btn btn-primary btn-lg">Choose Growth — $349/mo</a>
+          <a href="#demo" class="btn btn-text">View Demo &rarr;</a>
         </div>
-    </section>
 
-    <section id="pricing" class="pricing-section">
-        <div class="container">
-            <div class="pricing-card">
-                <div class="pricing-header">
-                    <span class="plan-name">Growth Plan</span>
-                    <div class="price-box">
-                        <span class="currency">$</span>
-                        <span class="amount">349</span>
-                        <span class="period">/mo</span>
-                    </div>
-                    <p class="plan-desc">Perfect for mid-size stores & agencies.</p>
-                </div>
-                <hr class="divider">
-                <div class="pricing-features">
-                    <ul>
-                        <li>🌍 Unlimited Data Sources</li>
-                        <li>📈 Advanced Funnel Metrics</li>
-                        <li>📧 Weekly & Monthly PDF Reports</li>
-                        <li>📞 Dedicated Account Manager</li>
-                        <li>🔒 Priority API Access</li>
-                    </ul>
-                </div>
-                <div class="pricing-footer">
-                    <a href="#" class="btn btn-primary btn-full">Subscribe Now</a>
-                    <p class="guarantee">14-day money-back guarantee</p>
-                </div>
-            </div>
+        <div class="trust-proof">
+          <p>Trusted by data-first stores & agencies • 24/7 secure reporting</p>
         </div>
-    </section>
+      </div>
 
-    <footer class="footer">
-        <div class="container footer-content">
-            <div class="footer-brand">
-                <img src="/assets/logo.png" alt="DataPilot" class="footer-logo">
-                <p>&copy; 2024 DataPilot Inc.</p>
-            </div>
-            <div class="footer-links">
-                <a href="#">Privacy</a>
-                <a href="#">Terms</a>
-                <a href="#">Contact Support</a>
-            </div>
+      <div class="hero-image-wrapper">
+        <img src="Dash.png" alt="Dashboard preview" class="hero-img floating" />
+        <div class="hero-glow"></div>
+      </div>
+    </div>
+  </header>
+
+  <!-- FEATURES -->
+  <section id="features" class="features-section">
+    <div class="container">
+      <div class="section-header text-center">
+        <h2>What Growth gives you</h2>
+        <p>Everything the Starter plan offers, plus weekly insights and strategy-ready reports.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">📈</div>
+          <h3>Automated Dashboards</h3>
+          <p>Daily ingestion, cleaning and Looker Studio dashboards that update automatically.</p>
         </div>
-    </footer>
+
+        <div class="feature-card">
+          <div class="feature-icon">🤖</div>
+          <h3>Weekly AI Insights</h3>
+          <p>AI-generated concise brief: trends, anomalies, and 3 recommended actions every week.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📧</div>
+          <h3>Weekly Email & PDF</h3>
+          <p>Shareable PDF and short briefing email — perfect for team sync or owner review.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🛠️</div>
+          <h3>Onboarding & Support</h3>
+          <p>Free onboarding (no setup fee), one monthly check-in, and priority email support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PREVIEW / INSIGHT -->
+  <section class="preview-section">
+    <div class="container preview-grid">
+      <div class="preview-image">
+        <img src="Insight.png" alt="Weekly insights preview" class="insight-img">
+      </div>
+
+      <div class="preview-text">
+        <h2>Weekly insights — delivered every Monday</h2>
+        <p>Short, action-oriented emails summarizing the wins and risks in your store. Spend minutes, not hours.</p>
+        <ul class="check-list">
+          <li>✅ Trend detection & comparison vs last period</li>
+          <li>✅ Top 3 product opportunities</li>
+          <li>✅ Quick conversion & cart recovery recommendations</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRICING -->
+  <section id="pricing" class="pricing-section">
+    <div class="container">
+      <div class="pricing-card">
+        <div class="pricing-header">
+          <span class="plan-name">Growth Plan</span>
+          <div class="price-box">
+            <span class="currency">$</span>
+            <span class="amount">349</span>
+            <span class="period">/mo</span>
+          </div>
+          <p class="plan-desc">Perfect for growing stores & agencies who want automated insights + monthly strategy.</p>
+        </div>
+
+        <hr class="divider">
+
+        <div class="pricing-features">
+          <ul>
+            <li>🌍 Unlimited data sources (Sheets, CSV, Shopify, Stripe)</li>
+            <li>📈 Live Looker Studio dashboard (24h updates)</li>
+            <li>📬 Weekly AI briefing email (auto)</li>
+            <li>📄 Monthly PDF summary</li>
+            <li>📞 1 monthly strategy call (30 mins)</li>
+            <li>🔒 Secure data handling — Google Drive + Sheets</li>
+            <li>⚙️ Free onboarding (no setup fee)</li>
+          </ul>
+        </div>
+
+        <div class="pricing-footer">
+          <!-- Replace with your PayPal/checkout link -->
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+    <input type="hidden" name="cmd" value="_s-xclick">
+    <input type="hidden" name="hosted_button_id" value="46D6GRFPSN4FG">
+    <input type="hidden" name="currency_code" value="USD">
+
+    <button type="submit" class="btn btn-primary btn-full">
+        Subscribe — $349 /mo
+    </button>
+</form>
+
+          <p class="guarantee">14-day money-back guarantee • Cancel anytime</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="features-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>FAQ</h2>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <h3>How long does onboarding take?</h3>
+          <p>We set up your pipeline and publish a working dashboard within 48–72 hours after we receive data access.</p>
+        </div>
+        <div class="feature-card">
+          <h3>What formats do you accept?</h3>
+          <p>Google Sheets, CSV exports, or direct store integrations (Shopify, WooCommerce). We handle the upload.</p>
+        </div>
+        <div class="feature-card">
+          <h3>How private is my data?</h3>
+          <p>We use your Google Drive + Looker Studio only. We never publish your data. You control access.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-brand">
+        <img src="logo.png" alt="DataPilot" class="footer-logo">
+        <p>&copy; <span id="year"></span> DataPilot</p>
+      </div>
+      <div class="footer-links">
+        <a href="/privacy.html">Privacy</a>
+        <a href="/terms.html">Terms</a>
+        <a href="mailto:chris@datapilot.in.inet">Support</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // small UI scripts
+    document.getElementById('year').innerText = new Date().getFullYear();
+  </script>
 
 </body>
 </html>
